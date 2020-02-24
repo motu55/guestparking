@@ -1,0 +1,2 @@
+cryptography==2.8
+Django==3.0.3

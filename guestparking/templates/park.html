@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="" method="POST">
+    {% csrf_token %}
+    {% if cars_error %}
+    <div class="row">
+    <div class="col-12">
+        Es gab einen Fehler beim Eintragen
+    </div>
+    </div>
+    {% endif %}
+    <div class="row">
+    <div class="col-12">
+        Autonummer
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <input type="text" class="form-control" name="plate" />
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <button type="submit" class="btn btn-primary">Eintragen</button>
+    </div>
+    </div>
+    </form>
+{% endblock %}

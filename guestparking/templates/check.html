@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <form action="" method="POST">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-12">
+        {{ decoded }}
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+        Signatur
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <input type="text" class="form-control" name="sign" />
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-12">
+    <button type="submit" class="btn btn-primary">Decodieren</button>
+    </div>
+    </div>
+    </form>
+{% endblock %}

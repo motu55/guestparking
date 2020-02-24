@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for car in cars %}
+    <div class="row">
+    <div class="col-12">
+        {{ car.plate }}
+    </div>
+    </div>
+    {%  endfor %}
+{% endblock %}
